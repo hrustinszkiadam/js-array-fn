@@ -3,16 +3,19 @@ import { useState } from 'react';
 import DataTableBody from './DataTable/DataTableBody';
 import DataTableHead from './DataTable/DataTableHead';
 
+const ASC = 'ascending';
+const DESC = 'descending';
+
 const DataTable = ({ dataToShow }) => {
 	const [sortConfig, setSortConfig] = useState({
 		key: 'name',
-		direction: 'asc',
+		direction: ASC,
 	});
 
 	const sortBy = (key) => {
-		let direction = 'asc';
-		if (sortConfig.key === key && sortConfig.direction === 'asc')
-			direction = 'desc';
+		let direction = ASC;
+		if (sortConfig.key === key && sortConfig.direction === ASC)
+			direction = DESC;
 		setSortConfig({ key, direction });
 	};
 
