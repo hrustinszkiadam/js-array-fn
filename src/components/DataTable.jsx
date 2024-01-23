@@ -20,7 +20,7 @@ const DataTable = ({ dataToShow }) => {
 	};
 
 	const sortedData = Array.from(dataToShow).sort((a, b) => {
-		const direction = sortConfig.direction === 'asc' ? 1 : -1;
+		const direction = sortConfig.direction === ASC ? 1 : -1;
 
 		if (a[sortConfig.key] < b[sortConfig.key]) return -direction;
 		return direction;
