@@ -1,0 +1,16 @@
+A mellékelt JSON fájl tartalmát helyezd el egy lokális JavaScript változóba, pl.:
+
+const people = { ... };
+
+A részfeladatok megoldásánál ügyelj arra, hogy az eredeti tömb tartalmát NE módosítsd!
+
+Rendezd a listát név szerint, az eredményt jelenítsd meg a konzolon.
+Kik a 30 évnél idősebbek? Jelenítsd meg a konzolon.
+Írd ki az elemeket a konzolra "Név (életkor)" formában. A tömb bejárásához használd a forEach függvényt! (people.forEach)
+Alakítsd át a 3. feladatot úgy, hogy nem a konzolra írja ki személyeket, hanem a HTML oldalra egy rendezetlen listába.
+Az emberek tömbből készíts egy új tömböt, amely csak a városokat tartalmazza. Az átalakításhoz használd a .map() függvényt! Az eredményt jelenítsd meg egy bekezdésben, ", "-vel elválasztva.
+Extra:
+Az adatokat jelenítsd meg táblázatos formában.
+A táblázat megfelelő fejlécére kattintva rendezd a mező szerint
+Ismételt kattintásra fordítsd meg a rendezés sorrendjét
+Készíts egy kereső mezőt, amely a névben keres
